@@ -1,12 +1,18 @@
+import { FC, ReactElement } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import './index.scss'
+import AppRouter from './AppRoutes';
 
-export  function App() {
+const App: FC = (): ReactElement => {
   return (
-    <h1 className="text-3xl font-bold underline bg-slate-200">
-      Hello world!
-    </h1>
-  )
-}
+    <>
+      <BrowserRouter>
+        <div className="w-screen min-h-screen flex flex-col relative">
+          <AppRouter />
+        </div>
+      </BrowserRouter>
+    </>
+  );
+};
 
-export default App
+export default App;
