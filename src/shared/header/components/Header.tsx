@@ -25,7 +25,7 @@ const Header: FC<IHeader> = ({ navClass }): ReactElement => {
                 <ul className="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                   <li>
                     <div className="hover:text-primary dark:hover:text-primaryLight block transition md:px-4">
-                      <span>Become a Seller</span>
+                      {/* <span>Become a Seller</span> */}
                     </div>
                   </li>
                 </ul>
